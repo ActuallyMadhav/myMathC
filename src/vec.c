@@ -3,20 +3,91 @@
 
 // arithmetic operations
 vec2 vec2_add(vec2 a, vec2 b){
-    vec2 result;
-    result.x = a.x + b.x;
-    result.y = a.y + b.y;
-    return result;
+    vec2 res;
+    res.x = a.x + b.x;
+    res.y = a.y + b.y;
+    return res;
 }
 
 vec2 vec2_subtract(vec2 a, vec2 b){
-    vec2 result;
-    result.x = a.x - b.x;
-    result.y = a.y - b.y;
-    return result;
+    vec2 res;
+    res.x = a.x - b.x;
+    res.y = a.y - b.y;
+    return res;
 }
 
 void vec2_scale(vec2* v, float k){
     v->x *= k;
     v->y *= k;
+}
+
+vec2 vec2_scale_new(const vec2 v, float k){
+    vec2 res;
+    res.x *= k;
+    res.y *= k;
+    return res;
+}
+
+vec3 vec3_add(vec3 a, vec3 b){
+    vec3 res;
+    res.x = a.x + b.x;
+    res.y = a.y + b.y;
+    res.z = a.z + b.z;
+    return res;
+}
+
+vec3 vec3_subtract(vec3 a, vec3 b){
+    vec3 res;
+    res.x = a.x - b.x;
+    res.y = a.y - b.y;
+    res.z = a.z - b.z;
+    return res;
+}
+
+void vec3_scale(vec3* v, float k){
+    v->x *= k;
+    v->y *= k;
+    v->z *= k;
+}
+
+vec3 vec3_scale_new(const vec3 v, float k){
+    vec3 res;
+    res.x *= k;
+    res.y *= k;
+    res.z *= k;
+    return res;
+}
+
+vec4 vec4_add(vec4 a, vec4 b){
+    vec4 res;
+    res.x = a.x + b.x;
+    res.y = a.y + b.y;
+    res.z = a.z + b.z;
+    res.w = a.w + b.w;
+    return res;
+}
+
+vec4 vec4_subtract(vec4 a, vec4 b){
+    vec4 res;
+    res.x = a.x - b.x;
+    res.y = a.y - b.y;
+    res.z = a.z - b.y;
+    res.w = a.w - b.w;
+    return res;
+}
+
+void vec4_scale(vec4* v, float k){
+    v->x *= k;
+    v->y *= k;
+    v->z *= k;
+    v->w *= k;
+}
+
+vec4 vec4_scale_new(const vec4 v, float k){
+    vec4 res;
+    res.x *= k;
+    res.y *= k;
+    res.z *= k;
+    res.w *= k;
+    return res;
 }
