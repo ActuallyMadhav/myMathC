@@ -23,8 +23,8 @@ void vec2_scale(vec2* v, float k){
 
 vec2 vec2_scale_new(const vec2 v, float k){
     vec2 res;
-    res.x *= k;
-    res.y *= k;
+    res.x = v.x * k;
+    res.y = v.y * k;
     return res;
 }
 
@@ -52,9 +52,9 @@ void vec3_scale(vec3* v, float k){
 
 vec3 vec3_scale_new(const vec3 v, float k){
     vec3 res;
-    res.x *= k;
-    res.y *= k;
-    res.z *= k;
+    res.x = v.x * k;
+    res.y = v.y * k;
+    res.z = v.z * k;
     return res;
 }
 
@@ -85,9 +85,9 @@ void vec4_scale(vec4* v, float k){
 
 vec4 vec4_scale_new(const vec4 v, float k){
     vec4 res;
-    res.x *= k;
-    res.y *= k;
-    res.z *= k;
-    res.w *= k;
+    res.x = v.x * k;
+    res.y = v.y * k;
+    res.z = v.z * k;
+    res.w = v.w * k;
     return res;
 }
