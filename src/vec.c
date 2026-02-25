@@ -71,7 +71,7 @@ vec4 vec4_subtract(vec4 a, vec4 b){
     vec4 res;
     res.x = a.x - b.x;
     res.y = a.y - b.y;
-    res.z = a.z - b.y;
+    res.z = a.z - b.z;
     res.w = a.w - b.w;
     return res;
 }
