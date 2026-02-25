@@ -13,14 +13,17 @@ typedef struct {float x, y, z, w;} vec4;
 vec2 vec2_add(vec2 a, vec2 b);
 vec2 vec2_subtract(vec2 a, vec2 b);
 void vec2_scale(vec2* v, float k);
+vec2 vec2_scale_new(const vec2 v, float k);
 
 vec3 vec3_add(vec3 a, vec3 b);
 vec3 vec3_subtract(vec3 a, vec3 b);
 void vec3_scale(vec3* v, float k);
+vec3 vec3_scale_new(const vec3 v, float k);
 
 vec4 vec4_add(vec4 a, vec4 b);
 vec4 vec4_subtract(vec4 a, vec4 b);
 void vec4_scale(vec4* v, float k);
+vec4 vec4_scale_new(const vec4 v, float k);
 
 // dot and cross products
 float vec2_dot(vec2 a, vec2 b);
