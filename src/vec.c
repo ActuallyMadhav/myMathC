@@ -91,3 +91,23 @@ vec4 vec4_scale_new(const vec4 v, float k){
     res.w = v.w * k;
     return res;
 }
+
+// dot and cross products
+float vec2_dot(vec2 a, vec2 b){
+    return a.x*b.x + a.y*b.y;
+}
+
+float vec3_dot(vec3 a, vec3 b){
+    return a.x*b.x + a.y*b.y + a.z*b.z;
+}
+float vec4_dot(vec4 a, vec4 b){
+    return a.x*b.x + a.y*b.y + a.z*b.z + a.w*b.w;
+}
+
+vec3 vec3_cross(vec3 a, vec3 b){
+    vec3 res;
+    res.x = a.y*b.z - a.z*b.y;
+    res.y = a.z*b.x - a.x*b.z;
+    res.z = a.x*b.y - a.y*b.x;
+    return res;
+}
