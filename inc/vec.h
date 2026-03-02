@@ -45,7 +45,7 @@ void vec4_normalize(vec4* v);
 // new vec returned
 vec2 vec2_normalized(vec2 v);
 vec3 vec3_normalized(vec3 v);
-vec3 vec4_normalized(vec4 v);
+vec4 vec4_normalized(vec4 v);
 
 // prints for debugging
 void vec2_print(vec2 v);
