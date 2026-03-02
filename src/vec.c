@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 #include "vec.h"
 
 // arithmetic operations
@@ -182,3 +183,13 @@ vec4 vec4_normalized(vec4 v){
     return normalized;
 }
 
+// prints for debugging
+void vec2_print(vec2 v){
+    printf("[%.2f, %.2f]", v.x, v.y);
+}
+void vec3_print(vec3 v){
+    printf("[%.2f, %.2f, %.2f]", v.x, v.y, v.z);
+}
+void vec4_print(vec4 v){
+    printf("[%.2f, %.2f, %.2f, %.2f]", v.x, v.y, v.z, v.w);
+}
