@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "mat.h"
+#include "../inc/mat.h"
 
 // mat2 operations
 mat2 mat2_add(mat2 a, mat2 b){

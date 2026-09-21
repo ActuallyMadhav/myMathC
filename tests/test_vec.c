@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "vec.h"
+#include "../inc/vec.h"
 
 int main(){
     vec2 a = {1.0f, 1.0f};
